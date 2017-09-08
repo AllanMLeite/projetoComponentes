@@ -1,7 +1,6 @@
-import { Component, NgModule } from '@angular/core';
+import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Carro } from '../../modelo/carro';
-import { Marca } from '../../modelo/marca';
 import { CarroProvider } from '../../provider/carro-provider';
 import { CarroDetailPage } from '../carro-detail/carro-detail';
 import { CarroCreatePage } from '../carro-create/carro-create';

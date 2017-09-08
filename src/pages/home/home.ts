@@ -1,6 +1,5 @@
-import { Component, NgModule } from '@angular/core';
+import { Component } from '@angular/core';
 import { NavController, ModalController } from 'ionic-angular';
-import { ListaCarrosComponent } from '../carro-list/carro-list';
 import { CarroCreatePage } from '../carro-create/carro-create';
 
 @Component({

@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { NavController } from 'ionic-angular';
 import { Marca } from '../modelo/marca';
 
 @Injectable()
