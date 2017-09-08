@@ -1,0 +1,23 @@
+<div>
+  <h1> 
+    Lista de carros
+  </h1>
+
+  <div class="row header">
+    <div class="col">Id</div>
+    <div class="col">Tipo</div>
+    <div class="col">Marca</div>
+    <div class="col">Ações</div>
+  </div>
+  <div class="row" *ngFor="let carro of listaCarros">
+    <div class="col">{{carro.id}}</div>        
+    <div class="col">{{carro.tipo}}</div>        
+    <div class="col">{{carro.marca?.descricao}}</div>        
+    <div class="col">
+      <a (click)="consultarVeiculo(carro)">Consultar</a>
+      <a (click)="excluirVeiculo(carro)">Excluir</a>
+      <a (click)="alterarVeiculo(carro)">Alterar</a>
+    </div>        
+  </div>
+    
+</div>

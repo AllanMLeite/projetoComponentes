@@ -1,0 +1,35 @@
+<ion-header>
+    
+      <ion-navbar>
+        <ion-title>Novo carro</ion-title>
+        <ion-buttons start>
+          <button ion-button (click)="cancel()">
+            <ion-icon name="md-close"></ion-icon>
+          </button>
+        </ion-buttons>
+        <ion-buttons end>
+          <button ion-button (click)="done()" strong>
+            <ion-icon name="md-checkmark"></ion-icon>
+          </button>
+        </ion-buttons>
+      </ion-navbar>
+    
+    </ion-header>
+<ion-content padding>
+    <form [formGroup]="form" (ngSubmit)="criar()">      
+      <ion-list>
+        <ion-item>
+          <ion-input required type="text" placeholder="Informe o tipo." formControlName="tipo"></ion-input>
+
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Marca</ion-label>
+          <ion-select formControlName="marca" required>
+            <ion-option *ngFor="let marca of getMarcas()" [value]="marca" placeholder="Informe a marca.">{{marca.descricao}}</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+    </form>
+  </ion-content>
+  
